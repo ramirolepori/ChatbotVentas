@@ -69,5 +69,4 @@ El chatbot se integra fácilmente en cualquier página web como un widget intera
     ```
 
     Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
-
 </details>

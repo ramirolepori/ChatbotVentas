@@ -15,8 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Chatbot",
-  description: "Chatbot",
+
+  title: "Chatbot de Ventas",
+  description: "Chatbot de Ventas con IA",
 };
 
 export default function RootLayout({
