@@ -1,4 +1,4 @@
-# Chatbot de Ventas HITO
+# Chatbot de Ventas
 
 Este es un proyecto de un chatbot de ventas interactivo construido con Next.js, TypeScript y la API de OpenAI. El chatbot está diseñado para responder a las preguntas de los usuarios y puede ser integrado en cualquier sitio web. También incluye una funcionalidad de llamada de voz a través de Vapi.
 
