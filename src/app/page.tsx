@@ -191,7 +191,9 @@ export default function Component() {
     try {
       console.log("Iniciando llamada...");
       if (vapiRef.current) {
-        await vapiRef.current.start("79158522-54ac-469a-ac1b-2fcfc6163d34");
+        await vapiRef.current.start(
+          process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID || ""
+        );
       }
       console.log("Llamada iniciada.");
       setIsInCall(true);
@@ -219,7 +221,7 @@ export default function Component() {
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        Chatbot Ventas HITO{" "}
+        Chatbot de Ventas{" "}
         <span className="relative inline-flex items-center justify-center ml-2">
           <svg className="absolute w-full h-full" viewBox="0 -5 100 50">
             <defs>
