@@ -39,7 +39,7 @@ export async function POST(req: Request) {
 
         // Iniciar el proceso de streaming de la respuesta
         const run = openai.beta.threads.runs.stream(currentThreadId, {
-          assistant_id: "asst_vxzxcwePDC3R7a47I9fIIbD7",
+          assistant_id: process.env.OPENAI_ASSISTANT_ID!,
         });
 
         // Manejar eventos del stream

@@ -191,7 +191,9 @@ export default function Component() {
     try {
       console.log("Iniciando llamada...");
       if (vapiRef.current) {
-        await vapiRef.current.start("79158522-54ac-469a-ac1b-2fcfc6163d34");
+        await vapiRef.current.start(
+          process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID || ""
+        );
       }
       console.log("Llamada iniciada.");
       setIsInCall(true);
