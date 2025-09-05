@@ -1,22 +1,40 @@
-# Chatbot de Ventas
+# Chatbot de Ventas con IA
 
-Este es un proyecto de un chatbot de ventas interactivo construido con Next.js, TypeScript y la API de OpenAI. El chatbot está diseñado para responder a las preguntas de los usuarios y puede ser integrado en cualquier sitio web. También incluye una funcionalidad de llamada de voz a través de Vapi.
+Este proyecto es un chatbot avanzado diseñado para mejorar la interacción con clientes y automatizar procesos de ventas. Utiliza inteligencia artificial para mantener conversaciones fluidas y naturales, y es capaz de responder preguntas complejas sobre productos o servicios.
 
-## Características
+El chatbot se integra fácilmente en cualquier página web como un widget interactivo y también ofrece la posibilidad de iniciar una llamada de voz para una asistencia más directa y personalizada.
 
--   **Chat Interactivo**: Un componente de chat en tiempo real que se comunica con un Asistente de OpenAI.
--   **Streaming de Respuestas**: Las respuestas del asistente se muestran en tiempo real a medida que se generan.
--   **Llamadas de Voz**: Integración con Vapi para permitir a los usuarios hablar con el asistente.
--   **UI Moderna**: Construido con Tailwind CSS y Shadcn UI para una interfaz de usuario limpia y moderna.
--   **Desplegable en Vercel**: Listo para ser desplegado en Vercel con configuración mínima.
+*(Sugerencia: ¡Considera añadir un GIF aquí mostrando el chatbot en acción!)*
 
-## Empezando
+---
 
-Sigue estas instrucciones para tener una copia del proyecto corriendo en tu máquina local para desarrollo y pruebas.
+## 🚀 Características Principales
+
+-   **Asistente Virtual con IA**: Conversaciones en tiempo real impulsadas por la API de OpenAI, capaces de entender el contexto y responder de manera coherente.
+-   **Widget de Chat Interactivo**: Un componente de chat moderno y fácil de usar que se puede incrustar en cualquier sitio web.
+-   **Respuestas en Tiempo Real (Streaming)**: Los usuarios ven las respuestas del asistente a medida que se generan, creando una experiencia de usuario dinámica y fluida.
+-   **Llamadas de Voz Inteligentes**: Integración con Vapi para escalar la conversación a una llamada de voz, donde el usuario puede hablar directamente con el asistente de IA.
+-   **Interfaz de Usuario Atractiva**: Diseñada con Tailwind CSS y Shadcn UI, siguiendo principios de diseño modernos para una experiencia de usuario excepcional.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+-   **Frontend**: Next.js, React, TypeScript
+-   **Estilos**: Tailwind CSS, Shadcn UI
+-   **Inteligencia Artificial**: OpenAI API (Assistants)
+-   **Comunicaciones por Voz**: Vapi AI
+-   **Despliegue**: Vercel
+
+---
+
+<details>
+<summary>⚙️ Instrucciones para Desarrolladores (Instalación y Uso)</summary>
 
 ### Prerrequisitos
 
-Necesitarás tener Node.js (versión 20 o superior) y npm (o yarn/pnpm/bun) instalados en tu máquina.
+-   Node.js (v20+)
+-   npm, yarn, pnpm, o bun
 
 ### Instalación
 
@@ -33,48 +51,23 @@ Necesitarás tener Node.js (versión 20 o superior) y npm (o yarn/pnpm/bun) inst
 
 3.  **Configura las variables de entorno:**
 
-    Crea un nuevo archivo llamado `.env.local` en la raíz de tu proyecto. Puedes copiar el archivo de ejemplo `.env.example` para empezar:
-
-    ```bash
-    cp .env.example .env.local
-    ```
-
-    Ahora, abre el archivo `.env.local` y añade tus claves de API y IDs de asistente:
+    Crea un archivo `.env.local` en la raíz del proyecto (puedes usar `.env.example` como plantilla) y añade tus claves de API:
 
     ```
-    # OpenAI Configuration
-    OPENAI_API_KEY="tu_openai_api_key_aqui"
-    OPENAI_ASSISTANT_ID="tu_openai_assistant_id_aqui"
+    # Configuración de OpenAI
+    OPENAI_API_KEY="tu_clave_de_api_de_openai"
+    OPENAI_ASSISTANT_ID="tu_id_de_asistente_de_openai"
 
-    # VAPI Configuration
-    # Asegúrate de que estas variables tengan el prefijo NEXT_PUBLIC_ para que estén disponibles en el navegador
-    NEXT_PUBLIC_VAPI_API_KEY="tu_vapi_api_key_aqui"
-    NEXT_PUBLIC_VAPI_ASSISTANT_ID="tu_vapi_assistant_id_aqui"
+    # Configuración de VAPI
+    NEXT_PUBLIC_VAPI_API_KEY="tu_clave_de_api_de_vapi"
+    NEXT_PUBLIC_VAPI_ASSISTANT_ID="tu_id_de_asistente_de_vapi"
     ```
 
-    -   `OPENAI_API_KEY`: Tu clave secreta de la API de OpenAI.
-    -   `OPENAI_ASSISTANT_ID`: El ID de tu Asistente de OpenAI.
-    -   `NEXT_PUBLIC_VAPI_API_KEY`: Tu clave pública de la API de Vapi.
-    -   `NEXT_PUBLIC_VAPI_ASSISTANT_ID`: El ID de tu Asistente de Vapi (el ID del bot de voz).
-
-4.  **Corre el servidor de desarrollo:**
+4.  **Ejecuta el servidor de desarrollo:**
     ```bash
     npm run dev
     ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+    Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-## Despliegue
-
-La forma más fácil de desplegar tu aplicación Next.js es usar la [Plataforma Vercel](https://vercel.com/new) de los creadores de Next.js.
-
-Asegúrate de configurar las variables de entorno en tu proyecto de Vercel antes de desplegar.
-
-## Construido Con
-
--   [Next.js](https://nextjs.org/) - El framework de React para producción.
--   [OpenAI](https://openai.com/) - Para la funcionalidad del asistente de IA.
--   [Vapi](https://vapi.ai/) - Para la funcionalidad de llamadas de voz.
--   [Tailwind CSS](https://tailwindcss.com/) - Para los estilos CSS.
--   [Shadcn UI](https://ui.shadcn.com/) - Para los componentes de la interfaz de usuario.
--   [TypeScript](https://www.typescriptlang.org/) - Para un tipado de código robusto.
+</details>
